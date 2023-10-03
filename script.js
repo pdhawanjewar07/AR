@@ -1,7 +1,7 @@
 const modelViewer = document.querySelector("model-viewer");
 
 window.switchSrc = (element, name) => {
-    const base = "https://modelviewer.dev/assets/ShopifyModels/" + name;
+    const base = "assets/ShopifyModels/" + name;
     modelViewer.src = base + '.glb';
     modelViewer.poster = base + '.webp';
     const slides = document.querySelectorAll(".slide");
